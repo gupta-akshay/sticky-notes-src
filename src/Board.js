@@ -20,7 +20,7 @@ var Board = createReactClass({
       notes: []
     }
   },
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     if(this.props.count) {
       var url = `http://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`;
       fetch(url)
